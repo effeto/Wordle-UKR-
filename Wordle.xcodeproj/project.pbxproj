@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52B663727EE28B600E8EF9C /* AnswersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52B663627EE28B600E8EF9C /* AnswersData.swift */; };
 		A599574627E8EA5C006AB720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599574527E8EA5C006AB720 /* AppDelegate.swift */; };
 		A599574827E8EA5C006AB720 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599574727E8EA5C006AB720 /* SceneDelegate.swift */; };
 		A599574A27E8EA5C006AB720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599574927E8EA5C006AB720 /* ViewController.swift */; };
 		A599574D27E8EA5C006AB720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A599574B27E8EA5C006AB720 /* Main.storyboard */; };
 		A599574F27E8EA5F006AB720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A599574E27E8EA5F006AB720 /* Assets.xcassets */; };
 		A599575227E8EA5F006AB720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A599575027E8EA5F006AB720 /* LaunchScreen.storyboard */; };
+		A599575C27E8EAB5006AB720 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599575B27E8EAB5006AB720 /* KeyboardViewController.swift */; };
+		A599575E27E8EAC4006AB720 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599575D27E8EAC4006AB720 /* BoardViewController.swift */; };
+		A599576027E8F1E2006AB720 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A599575F27E8F1E2006AB720 /* KeyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A52B663627EE28B600E8EF9C /* AnswersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersData.swift; sourceTree = "<group>"; };
 		A599574227E8EA5C006AB720 /* Wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A599574527E8EA5C006AB720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A599574727E8EA5C006AB720 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		A599574E27E8EA5F006AB720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A599575127E8EA5F006AB720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A599575327E8EA5F006AB720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A599575B27E8EAB5006AB720 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		A599575D27E8EAC4006AB720 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		A599575F27E8F1E2006AB720 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		A599574427E8EA5C006AB720 /* Wordle */ = {
 			isa = PBXGroup;
 			children = (
-				A599574527E8EA5C006AB720 /* AppDelegate.swift */,
-				A599574727E8EA5C006AB720 /* SceneDelegate.swift */,
-				A599574927E8EA5C006AB720 /* ViewController.swift */,
-				A599574B27E8EA5C006AB720 /* Main.storyboard */,
-				A599574E27E8EA5F006AB720 /* Assets.xcassets */,
-				A599575027E8EA5F006AB720 /* LaunchScreen.storyboard */,
+				A599575927E8EA6E006AB720 /* Core */,
+				A599575A27E8EA83006AB720 /* Other */,
 				A599575327E8EA5F006AB720 /* Info.plist */,
 			);
 			path = Wordle;
+			sourceTree = "<group>";
+		};
+		A599575927E8EA6E006AB720 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A599574927E8EA5C006AB720 /* ViewController.swift */,
+				A599574B27E8EA5C006AB720 /* Main.storyboard */,
+				A599575B27E8EAB5006AB720 /* KeyboardViewController.swift */,
+				A599575D27E8EAC4006AB720 /* BoardViewController.swift */,
+				A599575F27E8F1E2006AB720 /* KeyCell.swift */,
+				A52B663627EE28B600E8EF9C /* AnswersData.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A599575A27E8EA83006AB720 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A599574527E8EA5C006AB720 /* AppDelegate.swift */,
+				A599574727E8EA5C006AB720 /* SceneDelegate.swift */,
+				A599574E27E8EA5F006AB720 /* Assets.xcassets */,
+				A599575027E8EA5F006AB720 /* LaunchScreen.storyboard */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +169,10 @@
 				A599574A27E8EA5C006AB720 /* ViewController.swift in Sources */,
 				A599574627E8EA5C006AB720 /* AppDelegate.swift in Sources */,
 				A599574827E8EA5C006AB720 /* SceneDelegate.swift in Sources */,
+				A52B663727EE28B600E8EF9C /* AnswersData.swift in Sources */,
+				A599576027E8F1E2006AB720 /* KeyCell.swift in Sources */,
+				A599575C27E8EAB5006AB720 /* KeyboardViewController.swift in Sources */,
+				A599575E27E8EAC4006AB720 /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
